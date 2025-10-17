@@ -38,3 +38,13 @@ Now, we will bring the dependencies we need into scope:
 - SafeERC20 - library that enables us to handle more implementations of ERC20 (some tokens revert on failure, others do not return a boolean at all)
 
 Now we can start writing the main contract
+
+```solidity
+contract Nft is ERC721, Ownable {
+    using SafeERC20 for IERC20;
+
+    IERC20 public immutable asset;
+    uint256 public immutable priceForNft;
+    uint256 public totalSupply;
+}
+```
