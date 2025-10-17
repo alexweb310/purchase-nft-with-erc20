@@ -15,7 +15,7 @@ foundryup -i nightly
 For more details, visit: https://getfoundry.sh/
 
 First, open the terminal and type `forge init`. This will initialize a new Foundry project and once that's done, run the command `forge intsall OpenZeppelin/openzeppelin-contracts` to install the Open Zeppelin dependencies that we will make use of in this project.  
-Next, delete the default `Counter` files in the `script`, `src` and `test` folders and create a file named `Nft.sol`. Open the newly created file in your code editor.
+Next, delete the default `Counter` files in the `script`, `src` and `test` folders and create a file named `Nft.sol` in the `src` folder. Open the newly created file in your code editor.
 
 ```solidity
 // SPDX-License-Identifier: MIT
